@@ -1,0 +1,20 @@
+/* navigation.component.css */
+nav {
+    height: 100vh;
+    float: left;
+    width: 150px;
+    background: tomato;
+    list-style-type: none;
+}
+
+nav li {
+    font-family: Arial;
+    font-size: 16px;
+    padding: 12px 20px 5px;
+    border-bottom: 1px solid white;
+}
+
+nav li a {
+    color: white;
+    text-decoration: none;
+}
