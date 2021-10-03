@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'my-app';
+
+  randomColor() {
+    let hex = '#'+Math.random().toString(16).substr(-6);
+    alert(`This is a random color: ${hex}`);
+  }
 }
