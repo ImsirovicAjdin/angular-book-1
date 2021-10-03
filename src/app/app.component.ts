@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  yearTitle = 'The year';
   title = 'my-app';
   //border = this.randomWidth();
   border = 0;
