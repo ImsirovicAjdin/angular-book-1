@@ -8,7 +8,6 @@ import { Component } from '@angular/core';
 export class AppComponent {
   yearTitle = 'The year';
   title = 'my-app';
-  //border = this.randomWidth();
   border = 0;
   color = '';
 
@@ -20,12 +19,4 @@ export class AppComponent {
     this.border = Math.round(Math.random()*100);
     this.color = '#'+Math.random().toString(16).substr(-6);
   }
-  // randomColor() {
-  //   let hex = '#'+Math.random().toString(16).substr(-6);
-  //   alert(`This is a random color: ${hex}`);
-  // }
-
-  // randomWidth() {
-  //   return Math.round(Math.random()*100);
-  // }
 }
