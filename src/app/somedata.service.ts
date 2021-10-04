@@ -6,4 +6,8 @@ import { Injectable } from '@angular/core';
 export class SomedataService {
 
   constructor() { }
+
+  someMethodFromService(): number {
+    return 42;
+  }
 }

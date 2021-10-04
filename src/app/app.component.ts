@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-
+import { Component, OnInit } from '@angular/core';
+import { SomedataService } from './somedata.service';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -11,12 +11,12 @@ export class AppComponent {
   border = 0;
   color = '';
 
-  constructor() {
+  constructor(private data: SomedataService) {
     console.log(this.randomWidthAndCustomColor());
   }
 
   randomWidthAndCustomColor() {
-    this.border = Math.round(Math.random()*100);
+    this.border = this.data.someMethodFromService();
     this.color = '#'+Math.random().toString(16).substr(-6);
   }
 }
