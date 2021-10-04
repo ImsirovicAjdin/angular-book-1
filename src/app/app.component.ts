@@ -8,7 +8,7 @@ import { SomedataService } from './somedata.service';
 export class AppComponent {
   yearTitle = 'The year';
   title = 'my-app';
-  border = 0;
+  border: any;
   color = '';
 
   constructor(private data: SomedataService) {
@@ -16,7 +16,9 @@ export class AppComponent {
   }
 
   randomWidthAndCustomColor() {
-    this.border = this.data.someMethodFromService();
+    this.data.someMethodFromService().subscribe(res => {
+      this.border = res;
+    });
     this.color = '#'+Math.random().toString(16).substr(-6);
   }
 }
